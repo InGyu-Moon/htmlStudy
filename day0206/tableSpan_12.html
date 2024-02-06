@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tb2{
+            width: 400px;
+            border: 1px solid gray;
+            border-collapse: collapse;
+
+        }
+        .tb2 td, .tb2 th{
+            border: 1px solid green;
+        }
+        .tb3 {
+            width: 600px;
+            border: 1px solid gray;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        .tb3 tr{
+            height: 40px;
+        }
+        .tb3 td{
+            border: 1px gray solid;
+        }
+    </style>
+</head>
+<body>
+    <table border="1" style="width: 300px;">
+        <caption>[표1]</caption>        
+        <tr height="50" align="center">
+            <td>one</td>
+            <td>two</td>
+            <td>three</td>
+        </tr>
+        <tr height="50" align="center">
+            <td colspan="3">3칸 합침</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <table class="tb2">
+        <caption><b>[표2]</b></caption>
+        <tr height="40">
+            <th>사진</th>
+            <th>이름</th>
+            <th>주소</th>
+            <th>핸드폰</th>
+        </tr>
+        <tr>
+            <td rowspan="3" align="center">
+                <img src="../image/logoImg/a02.png" width="80">
+            </td>
+            <td>박보영</td>
+            <td>충남 아산시</td>
+            <td>010-1234-1234</td>
+        </tr>
+        <tr>
+            <td>김수경</td>
+            <td>서울 강남구</td>
+            <td>010-2222-2222</td>
+        </tr>
+        <tr>
+            <td>손흥민</td>
+            <td>강원도 춘천</td>
+            <td>010-3333-3333</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <table class="tb3">
+        <caption><b>[표3]</b></caption>
+        <tr>
+            <td rowspan="3">1</td>
+            <td colspan="3">2</td>
+        </tr>
+        <tr>
+            <td colspan="3">3</td>
+        </tr>
+        <tr>
+            <td colspan="2">4</td>
+            <td rowspan="2">5</td>
+        </tr>
+        <tr>
+            <td colspan="3">6</td>
+        </tr> 
+    </table>
+
+    <br><br><hr><br><br>
+    
+
+
+    <table class="tb3">
+        <caption><b>[표4]</b></caption>
+        <tr>
+            <td rowspan="3">최민수</td>
+            <td rowspan="3"><img src="../image/연예인사진/1.jpg" width="100"></td>
+            <td>010-1234-1234</td>
+        </tr>
+        <tr><td>경제학과</td></tr>
+        <tr><td>4학년</td></tr>
+    </table>
+
+</body>
+</html>
