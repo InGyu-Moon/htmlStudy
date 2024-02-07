@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        a{
+            /* a태그 링크 밑줄 삭제 */
+            text-decoration: none;
+        }
+        ul li{
+            list-style: none;
+        }
+        li.main{
+            float: left;
+        }
+        li.main>a{
+            display: block;
+            width: 200px;
+            color: red;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+        ul.submenu{
+            margin-top: 15px;
+            font-size: 12pt;
+            padding-left: 0;
+        }
+        ul.submenu>li>a{
+            display: block  ;
+            width: 180px;
+            height: 20px;
+            color: orange;
+        }
+        ul.submenu>li>a:hover{
+            color: purple;
+        }
+
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="main">
+            <a href="#">1일차</a>
+            <ul class="submenu">
+                <li>
+                    <a href="../day0205/cssClass_09.html">9번예제</a>
+                </li>
+                <li>
+                    <a href="../day0205/cssClass_10.html">10번예제</a>
+                </li>
+            </ul>
+        </li>
+
+        <li class="main">
+            <a href="#">2일차</a>
+            <ul class="submenu">
+                <li>
+                    <a href="../day0206/aTag_05.html">5번예제</a>
+                </li>
+                <li>
+                    <a href="../day0206/bgImage_09.html">9번예제</a>
+                </li>
+            </ul>
+        </li>
+
+    </ul>
+
+
+
+</body>
+</html>
